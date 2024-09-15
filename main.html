@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYNAMIC RESUME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DYNAMIC RESUME BUILDER</h1>
+    <form id="resumeform">
+        <ul>
+            <li>
+            <legend>PERSONAL INFORMATION</legend> <br>
+        <input type="text" id="name" placeholder="Name:" /> <br><br>
+        <input type="email" id="email" placeholder="Email:" /> <br><br>
+        <input type="text" id="phone" placeholder="Phone:" /> <br><br><br>
+            </li>
+            <li>
+            <legend>EDUCATION</legend> <br>
+        <input type="text" id="degree" placeholder="Degree:" /> <br><br>
+        <input type="text" id="institute" placeholder="Institute:" /> <br><br>
+        <input type="text" id="year" placeholder="Year:" /> <br><br>
+            </li>
+            <li>
+            <legend>EXPERIENCE</legend> <br>
+        <textarea id="experience" placeholder="Experience"></textarea> <br><br>
+            </li>
+            <li>
+            <legend>SKILLS</legend> <br>
+        <textarea id="skills" placeholder="Skills"></textarea> <br><br>
+            </li>
+        <li>
+            <legend label for="profilePicture">PROFILE PICTURE</label></legend> <br>
+        </li>
+        <input type="file" id="profilePicture" name="profilePicture:" accept="image/*" required> 
+        </ul>
+        <button type="submit">Generate Resume</button>
+      </form>
+      
+      <div id="resumeOutput"></div>
+      <script src="script.js"></script>
+</body>
+</html>
